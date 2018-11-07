@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Magic Header</title>
+    <link rel="stylesheet" type="text/css" href="sytle.css">
+</head>
+<body>
+    <div id="head"><h1 id="title">CACTUS WORLD</h1>
+        <div id="subhead">
+          
+        </div>
+    </div>
+    <div id="page">
+        <br><br><br><br><br><br><br>
+        <h1>Welcome to Cactus World !</h1>
+        <p>Cacti are flowering plants, but some have more prominent blooms
+            and there  are a few, such as  Mammillaria, Gymnocalycium  and 
+            Parodia, that will flower quite easily with impressive, colourful
+            displays.In modern English, the term cactus properly refers to 
+            plants belonging to the family Cactaceae. With one exception, 
+            all are native to the New World (the Americas). The sole exception 
+            is Rhipsalis, a jungle epiphyte found in tropical Africa, Madagascar, 
+            and Sri Lanka, as well as North and South America. Informally, 
+            cactus is used to refer to any stem succulent adapted to a dry climate, 
+            notably species from genus Euphorbia with forms reminiscent of Cactaceae. 
+            To be precise, these succulents are correctly described as "cactoid" or 
+            "cactiform" unless they are actual members of the Cactaceae.
+        </p>
+    </div>
+    <script>
+        function yscroll()
+        {
+            var header = document.getElementById("head");
+            var subhead = document.getElementById("subhead");
+            var ypos = window.pageYOffset;
+
+            if(ypos > 130)
+            {
+                header.style.height = "210px";
+                header.style.fontSize = "30px";
+                header.style.color = "#1F1268  ";
+                subhead.style.height = "0px";
+            }
+            else
+            {
+                header.style.height = "350px";
+                header.style.fontSize = "50px";
+                header.style.paddingTop = "60px";
+                header.style.color = "#0B2902";
+                subhead.style.height = "60px";
+            }
+        }
+
+        window.addEventListener("scroll",yscroll);
+    </script>
+</body>
+</html>

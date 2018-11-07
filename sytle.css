@@ -1,0 +1,46 @@
+#head
+{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 350px;
+    background-image: url("pic5.jpeg");
+    transition: height 0.3s linear 0s, padding 0.3s linear 0s;
+    overflow: hidden;
+    
+    text-align: center;
+    color: #0B2902 ;
+    font-family: Forte;
+    font-size: 50px;
+    padding-top: 60px;
+}
+
+ #subhead
+{
+    position: absolute;
+    /* top: 320px; */
+    bottom: 0px;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(rgb(3, 71, 33),rgb(66, 197, 66),rgb(14, 100, 14),rgb(127, 211, 93));
+    /* padding-top: 20px;
+    padding-left: 200px;
+    color: white; */
+    transition: height 0.3s linear 0s;
+  
+
+
+}
+
+#page
+{
+    margin-top: 250px;
+    text-align: center;
+    width: 100%;
+    height: 800px;
+    background-color: bisque;
+    font-family: Harrington;
+    font-size: 30px;
+   word-spacing: 10px;
+
+}
