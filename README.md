@@ -1,1 +1,1 @@
-# Magic-header-using-HTML-CSS-and-JS
+# Resizable-header-using-HTML-CSS-and-JS
