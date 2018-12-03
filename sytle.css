@@ -1,3 +1,7 @@
+body{
+    margin:0;
+    overflow-x: hidden;
+}
 #head
 {
     position: fixed;
@@ -7,7 +11,7 @@
     background-image: url("pic5.jpeg");
     transition: height 0.3s linear 0s, padding 0.3s linear 0s;
     overflow: hidden;
-    
+  
     text-align: center;
     color: #0B2902 ;
     font-family: Forte;
@@ -18,29 +22,84 @@
  #subhead
 {
     position: absolute;
-    /* top: 320px; */
     bottom: 0px;
     width: 100%;
-    height: 70px;
-    background: linear-gradient(rgb(3, 71, 33),rgb(66, 197, 66),rgb(14, 100, 14),rgb(127, 211, 93));
-    /* padding-top: 20px;
-    padding-left: 200px;
-    color: white; */
+    height: 45px;
+    background: olivedrab;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
     transition: height 0.3s linear 0s;
-  
 
-
+    margin: auto;
+    padding-top: 14px;
 }
 
+label{
+    padding-right: 20px;
+}
+
+input{
+    margin-right: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 3px;
+}
+
+button{
+    background-color: rgb(253, 224, 106);
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background: darkgreen;
+}
 #page
 {
     margin-top: 250px;
     text-align: center;
     width: 100%;
-    height: 800px;
+    height: 700px;
     background-color: bisque;
     font-family: Harrington;
-    font-size: 30px;
-   word-spacing: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    word-spacing: 10px;
 
+}
+#page h1{
+    font-family: cursive;
+    color: brown;
+}
+@media(max-width: 892px)
+{
+    body{
+        overflow: hidden;
+    }
+    #head
+    {
+        font-size: 20px;
+        padding-top: 10px;
+        height: 100px;
+    }
+    #subhead
+    {
+        display: none;
+    }
+    #page
+    {
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        font-size: 16px;
+        word-spacing: 10px;
+        line-height: 1.5;
+    }
+    #page h1{
+        font-size: 18px;
+    }
 }

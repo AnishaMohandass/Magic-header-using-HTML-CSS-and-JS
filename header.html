@@ -10,7 +10,11 @@
 <body>
     <div id="head"><h1 id="title">CACTUS WORLD</h1>
         <div id="subhead">
-          
+          <label style="font-size: 22px">Request an estimate</label> 
+          <input type="text" name=urname placeholder="Enter your name">
+          <input type="email" name=email placeholder="Enter your email id">
+          <input type="text" name=mobile placeholder="Enter your mobile number">
+          <button>Submit</button>
         </div>
     </div>
     <div id="page">
@@ -26,8 +30,6 @@
             and Sri Lanka, as well as North and South America. Informally, 
             cactus is used to refer to any stem succulent adapted to a dry climate, 
             notably species from genus Euphorbia with forms reminiscent of Cactaceae. 
-            To be precise, these succulents are correctly described as "cactoid" or 
-            "cactiform" unless they are actual members of the Cactaceae.
         </p>
     </div>
     <script>
@@ -39,10 +41,10 @@
 
             if(ypos > 130)
             {
-                header.style.height = "210px";
+                header.style.height = "200px";
                 header.style.fontSize = "30px";
                 header.style.color = "#1F1268  ";
-                subhead.style.height = "0px";
+                subhead.style.display = "none";
             }
             else
             {
@@ -50,7 +52,7 @@
                 header.style.fontSize = "50px";
                 header.style.paddingTop = "60px";
                 header.style.color = "#0B2902";
-                subhead.style.height = "60px";
+                subhead.style.display = "block";
             }
         }
 
